@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <link rel='stylesheet' href='/bootstrap/css/bootstrap.css' />
+  </head>
+  <body>
+  <div id="dbt">
+      <table id="tab" class="table table-striped">
+          <tbody>
+          <tr>
+              <td>id</td>
+              <td>firstname</td>
+              <td>lastname</td>
+              <td>email</td>
+              <td>gender</td>
+          </tr>
+          <% for(var i=0; i<res.length; i++) {%>
+          <tr>
+              <td><%=res[i].id%></td>
+              <td><%=res[i].firstname%></td>
+              <td><%=res[i].lastname%></td>
+              <td><%=res[i].email%></td>
+              <td><%=res[i].gender%></td>
+              <td><input type="button" value="edit" class="btn btn-primary btn-xs"/>
+                  <input type="button" value="details" class="btn btn-primary btn-xs"/>
+                  <input type="button" value="delete" class="btn btn-alert btn-xs"/>
+              </td>
+          </tr>
+          <% } %>
+          </tbody>
+      </table>
+  </div>
+  </body>
+</html>

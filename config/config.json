@@ -1,0 +1,8 @@
+{
+  "port":"3000",
+  "dbconf":{   "host":"localhost",
+    "user":"root",
+    "password":"ghbyn",
+    "database":"test"
+  }
+}
